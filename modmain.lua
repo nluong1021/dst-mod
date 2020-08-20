@@ -1,59 +1,58 @@
 PrefabFiles = {
-	"esctemplate",
-    "esctemplate_none",
-    "cat_mask",
+	"miyo",
+    "miyo_none",
 }
 
 Assets = {
-    Asset( "IMAGE", "images/saveslot_portraits/esctemplate.tex" ),
-    Asset( "ATLAS", "images/saveslot_portraits/esctemplate.xml" ),
+    Asset( "IMAGE", "images/saveslot_portraits/miyo.tex" ),
+    Asset( "ATLAS", "images/saveslot_portraits/miyo.xml" ),
 
-    Asset( "IMAGE", "images/selectscreen_portraits/esctemplate.tex" ),
-    Asset( "ATLAS", "images/selectscreen_portraits/esctemplate.xml" ),
+    Asset( "IMAGE", "images/selectscreen_portraits/miyo.tex" ),
+    Asset( "ATLAS", "images/selectscreen_portraits/miyo.xml" ),
 	
-    Asset( "IMAGE", "images/selectscreen_portraits/esctemplate_silho.tex" ),
-    Asset( "ATLAS", "images/selectscreen_portraits/esctemplate_silho.xml" ),
+    Asset( "IMAGE", "images/selectscreen_portraits/miyo_silho.tex" ),
+    Asset( "ATLAS", "images/selectscreen_portraits/miyo_silho.xml" ),
 
-    Asset( "IMAGE", "bigportraits/esctemplate.tex" ),
-    Asset( "ATLAS", "bigportraits/esctemplate.xml" ),
+    Asset( "IMAGE", "bigportraits/miyo.tex" ),
+    Asset( "ATLAS", "bigportraits/miyo.xml" ),
 	
-	Asset( "IMAGE", "images/map_icons/esctemplate.tex" ),
-	Asset( "ATLAS", "images/map_icons/esctemplate.xml" ),
+	Asset( "IMAGE", "images/map_icons/miyo.tex" ),
+	Asset( "ATLAS", "images/map_icons/miyo.xml" ),
 	
-	Asset( "IMAGE", "images/avatars/avatar_esctemplate.tex" ),
-    Asset( "ATLAS", "images/avatars/avatar_esctemplate.xml" ),
+	Asset( "IMAGE", "images/avatars/avatar_miyo.tex" ),
+    Asset( "ATLAS", "images/avatars/avatar_miyo.xml" ),
 	
-	Asset( "IMAGE", "images/avatars/avatar_ghost_esctemplate.tex" ),
-    Asset( "ATLAS", "images/avatars/avatar_ghost_esctemplate.xml" ),
+	Asset( "IMAGE", "images/avatars/avatar_ghost_miyo.tex" ),
+    Asset( "ATLAS", "images/avatars/avatar_ghost_miyo.xml" ),
 	
-	Asset( "IMAGE", "images/avatars/self_inspect_esctemplate.tex" ),
-    Asset( "ATLAS", "images/avatars/self_inspect_esctemplate.xml" ),
+	Asset( "IMAGE", "images/avatars/self_inspect_miyo.tex" ),
+    Asset( "ATLAS", "images/avatars/self_inspect_miyo.xml" ),
 	
-	Asset( "IMAGE", "images/names_esctemplate.tex" ),
-    Asset( "ATLAS", "images/names_esctemplate.xml" ),
+	Asset( "IMAGE", "images/names_miyo.tex" ),
+    Asset( "ATLAS", "images/names_miyo.xml" ),
 	
-	Asset( "IMAGE", "images/names_gold_esctemplate.tex" ),
-    Asset( "ATLAS", "images/names_gold_esctemplate.xml" ),
+	Asset( "IMAGE", "images/names_gold_miyo.tex" ),
+    Asset( "ATLAS", "images/names_gold_miyo.xml" ),
 }
 
-AddMinimapAtlas("images/map_icons/esctemplate.xml")
+AddMinimapAtlas("images/map_icons/miyo.xml")
 
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
 -- The character select screen lines
-STRINGS.CHARACTER_TITLES.esctemplate = "Miyo Sasaki"
-STRINGS.CHARACTER_NAMES.esctemplate = "Muge"
-STRINGS.CHARACTER_DESCRIPTIONS.esctemplate = "*Can craft masks that turn her into mob friends\n*Separate crafting tab for masks\n*Enters with Cat mask"
-STRINGS.CHARACTER_QUOTES.esctemplate = "\"I used to wish the world would end. Every single day.\""
-STRINGS.CHARACTER_SURVIVABILITY.esctemplate = "Slim"
+STRINGS.CHARACTER_TITLES.miyo = "Miyo Sasaki"
+STRINGS.CHARACTER_NAMES.miyo = "Miyo"
+STRINGS.CHARACTER_DESCRIPTIONS.miyo = "*Can craft masks that turn her into mob friends\n*Separate crafting tab for masks\n*Enters with Cat mask"
+STRINGS.CHARACTER_QUOTES.miyo = "\"I used to wish the world would end. Every single day.\""
+STRINGS.CHARACTER_SURVIVABILITY.miyo = "Slim"
 
 -- Custom speech strings
-STRINGS.CHARACTERS.ESCTEMPLATE = require "speech_miyo"
+STRINGS.CHARACTERS.MIYO = require "speech_miyo"
 
 -- The character's name as appears in-game 
-STRINGS.NAMES.ESCTEMPLATE = "Muge"
-STRINGS.SKIN_NAMES.esctemplate_none = "Esc"
+STRINGS.NAMES.MIYO = "Miyo"
+STRINGS.SKIN_NAMES.miyo_none = "Miyo"
 
 -- The skins shown in the cycle view window on the character select screen.
 -- A good place to see what you can put in here is in skinutils.lua, in the function GetSkinModes
@@ -68,4 +67,4 @@ local skin_modes = {
 }
 
 -- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
-AddModCharacter("esctemplate", "FEMALE", skin_modes)
+AddModCharacter("miyo", "FEMALE", skin_modes)
