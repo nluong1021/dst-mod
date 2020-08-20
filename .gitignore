@@ -1,0 +1,6 @@
+*.tex
+*.xml
+*.zip
+
+exported/*_cleared/
+anim/
